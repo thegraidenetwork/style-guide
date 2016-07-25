@@ -9,6 +9,7 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="css/navigation.css" rel="stylesheet" type="text/css">
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
+    <link href="css/forms.css" rel="stylesheet" type="text/css">
 </head>
 <div class="container">
 <!-- Beginning of Styleguide -->
@@ -329,9 +330,10 @@
 
 <h2>Standard Form</h2>
 <form>
-    <div class="form-group">
+    <div class="form-group required">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+        <p class="help-block">This is a required field.</p>
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
@@ -347,7 +349,13 @@
             <input type="checkbox"> Check me out
         </label>
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" disabled readonly> You can't check me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-default">Cancel</button>
 </form>
 
 <hr/>
