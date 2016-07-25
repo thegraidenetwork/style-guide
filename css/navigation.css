@@ -1,14 +1,4 @@
-.page-header-menu {
-    background: #2DBF74;
-
-}
-.page-header-menu li a {
-    color: #ffffff;
-}
-.page-header-menu li a:hover {
-    background: #57CC90;
-}
-
+/* Profile Nav */
 ul.dropdown-menu {
     background: #2DBF74;
     border: none;
@@ -24,4 +14,24 @@ ul.dropdown-menu li a {
 ul.dropdown-menu li a:hover {
     color: #ffffff;
     background: #57CC90;
+}
+/* Primary Nav */
+.page-header-menu {
+    background: #2DBF74;
+
+}
+.page-header-menu li a {
+    color: #ffffff;
+}
+.page-header-menu li a:hover {
+    background: #57CC90;
+}
+/* Breadcrumb */
+ol.breadcrumb {
+    padding: 15px;
+    border-radius: 0;
+    background: #EDEDED;
+}
+.breadcrumb > li + li:before {
+    content: "\003e";
 }

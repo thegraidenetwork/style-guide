@@ -2,12 +2,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #383838;
 }
-a {
+p a {
     color: #19AE54;
 }
-a:hover {
+p a:hover {
     color: #2DBF74;
 }
-a:visited {
+p a:visited {
     color: #19AE54;
+}
+a {
+    color: #383838;
+}
+a:hover {
+    color: #383838;
+}
+a:visited {
+    color: #383838;
 }
