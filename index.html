@@ -7,8 +7,10 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/buttons.css" rel="stylesheet" type="text/css">
 </head>
-<body class="container">
+<div class="container">
 <!-- Beginning of Styleguide -->
 <h1>Styleguide - The Graide Network</h1>
 
@@ -119,11 +121,45 @@
 
 <h1 id="navigation">Navigation</h1>
 
-<h2>Primary Nav</h2>
-<p>Coming Soon!</p>
-
 <h2>Profile Nav</h2>
-<p>Coming Soon!</p>
+<div class="row">
+<div class="container">
+    <ul class="nav navbar-nav navbar-right">
+        <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" role="button">
+                <img alt="" width="30px" class="img-circle" src="http://tgn.localhost.com/assets/uploads/dummy.png">
+                Current User Name
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="drop">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Log Out</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+
+<h2>Primary Nav</h2>
+<div class="page-header-menu">
+    <div class="container">
+        <div class="hor-menu ">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">My Assignments</a>
+                </li>
+                <li>
+                    <a href="#">My Courses</a>
+                </li>
+                <li>
+                    <a href="#">Graiders</a>
+                </li>
+                <li>
+                    <a href="#">Post an Assignment</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <h2>Breadcrumbs</h2>
 <p>Coming Soon!</p>
@@ -132,8 +168,8 @@
 
 <h1 id="buttons">Buttons</h1>
 
+<button class="btn btn-default">Default Button</button>
 <button class="btn btn-success">Success (Submit) Button</button>
-
 <button class="btn btn-info">Alternate Button</button>
 
 <hr/>
@@ -238,6 +274,12 @@
 <hr/>
 
 <h1 id="panels">Panels</h1>
+<h2>Text Panels</h2>
+<h2>Linked Text Panels</h2>
+<h2>Image Panels</h2>
+<hr/>
+
+<h1 id="alerts">Alerts</h1>
 
 <hr/>
 
@@ -247,5 +289,7 @@
 
 
 <!-- End of Styleguide -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

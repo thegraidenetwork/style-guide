@@ -2,3 +2,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #383838;
 }
+a {
+    color: #19AE54;
+}
+a:hover {
+    color: #2DBF74;
+}
+a:visited {
+    color: #19AE54;
+}

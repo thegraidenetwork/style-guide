@@ -1,0 +1,27 @@
+.page-header-menu {
+    background: #2DBF74;
+
+}
+.page-header-menu li a {
+    color: #ffffff;
+}
+.page-header-menu li a:hover {
+    background: #57CC90;
+}
+
+ul.dropdown-menu {
+    background: #2DBF74;
+    border: none;
+    border-radius: 0;
+}
+ul.dropdown-menu {
+    padding: 0;
+}
+ul.dropdown-menu li a {
+    color: #ffffff;
+    padding: 15px;
+}
+ul.dropdown-menu li a:hover {
+    color: #ffffff;
+    background: #57CC90;
+}
