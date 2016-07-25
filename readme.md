@@ -1,22 +1,3 @@
-# The Graide Network Style Guide
+# Styleguide - The Graide Network
 
-## Colors
-
-## Fonts
-
-## Forms
-- Checkboxes
-  - Enabled, disabled
-  - Labels
-- Submit Button
-- Alternate Button
-- Input fields
-
-## Common Elements
-
-### Assignments
-- Main assignment body, description, etc
-- Section assignments list
-
-
-
+A quick-and-dirty frontend styleguide for The Graide Network internal use.
