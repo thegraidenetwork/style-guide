@@ -11,6 +11,7 @@
     <link href="css/navigation.css" rel="stylesheet" type="text/css">
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
     <link href="css/forms.css" rel="stylesheet" type="text/css">
+    <link href="css/panels.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <div class="container">
@@ -25,7 +26,7 @@
     <li><a href="#colors">Colors</a></li>
     <li><a href="#navigation">Navigation</a></li>
     <li><a href="#buttons">Buttons</a></li>
-    <li><a href="#headings">Headings</a></li>
+    <li><a href="#icons">Icons</a></li>
     <li><a href="#text-elements">Text Elements</a></li>
     <li><a href="#lists">Lists</a></li>
     <li><a href="#tables">Tables</a></li>
@@ -189,20 +190,106 @@
 
 <hr/>
 
-<h1 id="headings">Headings</h1>
-
-<h1>Heading 1 <small>Sub Heading 1</small></h1>
-<h2>Heading 2 <small>Sub Heading 2</small></h2>
-<h3>Heading 3 <small>Sub Heading 3</small></h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+<h1 id="icons">Icons</h1>
+<table class="table table-responsive">
+    <thead>
+    <tr>
+        <th>Symbol</th>
+        <th>Meaning</th>
+        <th>Span class</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th colspan="3">Glyphicons</th>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-bell"></span></td>
+        <td>Alert</td>
+        <td><code>glyphicon glyphicon-bell</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-plus-sign"></span></td>
+        <td>Create</td>
+        <td><code>glyphicon glyphicon-plus-sign</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-edit"></span></td>
+        <td>Edit</td>
+        <td><code>glyphicon glyphicon-edit</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-plus"></span></td>
+        <td>Expand/View More</td>
+        <td><code>glyphicon glyphicon-plus</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-envelope"></span></td>
+        <td>Messages</td>
+        <td><code>glyphicon glyphicon-envelope</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-file"></span></td>
+        <td>Report</td>
+        <td><code>glyphicon glyphicon-file</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-lock"></span></td>
+        <td>Security/Logout/Login</td>
+        <td><code>glyphicon glyphicon-lock</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-user"></span></td>
+        <td>User Profile</td>
+        <td><code>glyphicon glyphicon-user</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-search"></span></td>
+        <td>View/Review</td>
+        <td><code>glyphicon glyphicon-search</code></td>
+    </tr>
+    <tr>
+        <th colspan="3">Social icons (by font-awesome)</th>
+    </tr>
+    <tr>
+        <td><i class="fa fa-envelope-o"></i></td>
+        <td>Email</td>
+        <td><code>fa fa-envelope-o</code></td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-facebook"></i></td>
+        <td>Facebook</td>
+        <td><code>fa fa-facebook</code></td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-linkedin"></i></td>
+        <td>Linkedin</td>
+        <td><code>fa fa-linkedin</code></td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-twitter"></i></td>
+        <td>Twitter</td>
+        <td><code>fa fa-twitter</code></td>
+    </tr>
+    </tbody>
+</table>
 
 <hr/>
 
 <h1 id="text-elements">Text Elements</h1>
 
 <div class="row">
+    <div class="col-md-6">
+        <h2>Headings</h2>
+
+        <h1>Heading 1 <small>Sub Heading 1</small></h1>
+        <h2>Heading 2 <small>Sub Heading 2</small></h2>
+        <h3>Heading 3 <small>Sub Heading 3</small></h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </div>
+
     <div class="col-md-6">
         <h2>Text Styles</h2>
         <p>A <a href="#">link element</a> within a paragraph tag</p>
@@ -215,66 +302,6 @@
         <p>The <sub>sub element</sub> example</p>
         <p>The <sup>sup element</sup> example</p>
         <p>The <u>u element</u> example</p>
-    </div>
-
-    <div class="col-md-6">
-        <h2>Glyphicons</h2>
-        <table class="table table-responsive">
-    <thead>
-        <tr>
-            <th>Symbol</th>
-            <th>Meaning</th>
-            <th>Span class</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span class="glyphicon glyphicon-bell"></span></td>
-            <td>Alert</td>
-            <td><code>glyphicon glyphicon-bell</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-plus-sign"></span></td>
-            <td>Create</td>
-            <td><code>glyphicon glyphicon-plus-sign</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-edit"></span></td>
-            <td>Edit</td>
-            <td><code>glyphicon glyphicon-edit</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-plus"></span></td>
-            <td>Expand/View More</td>
-            <td><code>glyphicon glyphicon-plus</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-envelope"></span></td>
-            <td>Messages</td>
-            <td><code>glyphicon glyphicon-envelope</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-file"></span></td>
-            <td>Report</td>
-            <td><code>glyphicon glyphicon-file</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-lock"></span></td>
-            <td>Security/Logout/Login</td>
-            <td><code>glyphicon glyphicon-lock</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-user"></span></td>
-            <td>User Profile</td>
-            <td><code>glyphicon glyphicon-user</code></td>
-        </tr>
-        <tr>
-            <td><span class="glyphicon glyphicon-search"></span></td>
-            <td>View/Review</td>
-            <td><code>glyphicon glyphicon-search</code></td>
-        </tr>
-    </tbody>
-</table>
     </div>
 </div>
 <hr/>
@@ -364,9 +391,88 @@
 <hr/>
 
 <h1 id="panels">Panels</h1>
-<h2>Text Panels</h2>
+<h2>Count Panels</h2>
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3><a href="#">1</a></h3>
+                <p><a href="#">Count</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span class="glyphicon glyphicon-bell pull-right"></span>
+                <h3><a href="#">1</a></h3>
+                <p><a href="#">Count with alert</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h2>Image Panels</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Section 5</h3>
+            </div>
+            <div class="panel-body">
+                <a href="#">
+                    <img src="http://app.thegraidenetwork.com/assets/uploads/dummy.png" class="img-responsive center-block">
+                </a>
+                <a href="#">Image</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Section 23</h3>
+            </div>
+            <div class="panel-body">
+                <a href="#">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </a>
+            </div>
+            <div class="panel-footer">
+                <a href="#">Icon as image</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h2>Table Panels</h2>
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Table panel title</h3>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                </tr>
+                <tr class="even">
+                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                </tr>
+                <tr>
+                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 <hr/>
 
 <h1 id="alerts">Alerts</h1>
