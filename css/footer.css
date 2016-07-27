@@ -1,0 +1,37 @@
+.footer {
+    background: #2DBF74 none repeat scroll 0% 0%;
+    text-align: center;
+    padding: 18px 0 0 0;
+    position: relative;
+}
+
+.footer .container {
+    padding: 68px 34px;
+}
+
+.footer a, .footer .links {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: #383838;
+    text-decoration: none;
+}
+
+.footer .site-links {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer .site-links li {
+    padding: .75em 1em;
+}
+
+.footer .social-links {
+    font-size: 18px;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    padding-top: 35px;
+}
