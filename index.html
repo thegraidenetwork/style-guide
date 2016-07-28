@@ -12,6 +12,7 @@
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
     <link href="css/forms.css" rel="stylesheet" type="text/css">
     <link href="css/panels.css" rel="stylesheet" type="text/css">
+    <link href="css/alerts.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <div class="container">
@@ -103,7 +104,7 @@
 
 <h2>Greens</h2>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="panel panel-default" style="background-color: #19AE54;">
             <div class="panel-body">
                 <h3>Dark Green</h3>
@@ -111,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="panel panel-default" style="background-color: #2DBF74;">
             <div class="panel-body">
                 <h3>Medium Green</h3>
@@ -119,11 +120,19 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="panel panel-default" style="background-color: #57CC90;">
             <div class="panel-body">
                 <h3>Light Green</h3>
                 <h4>#57CC90</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default" style="background-color: #EEF5EB;">
+            <div class="panel-body">
+                <h3>Lightest Green</h3>
+                <h4>#EEF5EB</h4>
             </div>
         </div>
     </div>
@@ -444,7 +453,7 @@
 <h2>Image Panels</h2>
 <p class="caption">These use images instead of counts</p>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-6">
         <a class="panel panel-default" href="#">
             <div class="panel-heading">
                 <h3 class="panel-title">Section 5</h3>
@@ -459,7 +468,7 @@
             </div>
         </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-6">
         <a href="#" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Section 23</h3>
@@ -508,7 +517,14 @@
 <hr/>
 
 <h1 id="alerts">Alerts</h1>
-
+    <div class="alert alert-success" role="alert">
+        <strong>Success!</strong>
+        Your data was retrieved or saved successfully.
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <strong>Error!</strong>
+        Something went wrong and we couldn't save or retrieve your data.
+    </div>
 <hr/>
 
 <h1 id="footer">Footer</h1>
