@@ -26,6 +26,34 @@ ul.dropdown-menu li a:hover {
 .page-header-menu li a:hover {
     background: #57CC90;
 }
+
+/* Alternative Nav */
+.alt-navbar {
+    background-color: #fff;
+    padding: 30px;
+}
+.alt-navbar .navbar-header {
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.alt-navbar .navbar-brand {
+    left: calc(50% - 70px);
+    margin-bottom: 15px;
+    padding-top: 0;
+    position: absolute;
+}
+.alt-navbar .navbar-brand img {
+    display: inline-block;
+    width: 140px;
+}
+.alt-navbar .navbar-nav > li > a {
+    color: #383838;
+    font-size: 16px;
+}
+.alt-navbar .navbar-nav > li > a:hover {
+    color: #2DBF74;
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 768px) {
     .page-header-menu {
