@@ -20,3 +20,11 @@ a:hover {
 a:visited {
     color: #383838;
 }
+.inline-block {
+    display: inline-block;
+}
+.inline-text-image {
+    max-width: 16px;
+    position: relative;
+    top: -2px;
+}
