@@ -422,10 +422,10 @@
 
 <hr />
 
-<h1 id="form-elements">Forms</h1>
+<h1 id="forms">Forms</h1>
 
 <h2>Standard Form</h2>
-<form>
+<form action="#forms" method="post">
     <div class="form-group required">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
@@ -434,11 +434,6 @@
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
     </div>
     <div class="checkbox">
         <label>
@@ -452,6 +447,19 @@
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
     <button type="submit" class="btn btn-default">Cancel</button>
+</form>
+
+<h2>File Upload Form</h2>
+<form action="#forms" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="btn btn-default btn-file" for="file_upload_control">
+            <span class="glyphicon glyphicon-upload"></span>
+            Upload file
+            <input id="file_upload_control" class="form-control" name="file_upload_control" type="file" style="display: none;">
+        </label>
+        <p id="file_upload_control_message" class="help-block">Helper text.</p>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
 </form>
 
 <hr/>
@@ -593,5 +601,7 @@
 <!-- End of Styleguide -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/file-uploads.js"></script>
+</div>
 </body>
 </html>
