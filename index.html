@@ -192,47 +192,103 @@
 
 <h1 id="navigation">Navigation</h1>
 
-<h2>Profile Nav</h2>
-<div class="container-fluid">
-    <ul class="nav navbar-nav navbar-right">
-        <li id="fat-menu" class="dropdown">
-            <a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" role="button">
-                <img alt="" width="30px" class="img-circle" src="http://tgn.localhost.com/assets/uploads/dummy.png">
-                Current User Name
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="drop">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Log Out</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
 <h2>Primary Nav</h2>
-<div class="page-header-menu container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
-    </div>
-    <div class="collapse navbar-collapse" id="primary-nav">
-        <ul class="nav navbar-nav">
-            <li>
-                <a href="#">My Assignments</a>
+<p><em>Should be included outside a <code>.container</code> element.</em></p>
+</div><!--/container-->
+<nav class="navbar navbar-default nav-static-top">
+    <div class="container brand">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo.png" alt="The Graide Network">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li
+                class="dropdown dropdown-extended dropdown-dark dropdown-tasks"
+                id="header_task_bar"
+            >
+                <a
+                    href=""
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    data-hover="dropdown"
+                    data-close-others="true"
+                >
+                    <i class="fa fa-envelope"></i>
+                    <span class="badge badge-default">123</span>
+                </a>
+                    <ul class="dropdown-menu extended tasks">
+                        <li>
+                            <div
+                                 style="position: relative; overflow: hidden; width: auto;"
+                                 class="slimScrollDiv"
+                            >
+                                <ul
+                                    class="dropdown-menu-list scroller"
+                                    data-handle-color="#637283"
+                                    data-initialized="1"
+                                    style="overflow: hidden; width: auto;"
+                                >
+                                    <li>
+                                        <a href="#">
+                                            <span class="task">
+                                                <span class="desc">
+                                                    From: Johnny
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
             </li>
-            <li>
-                <a href="#">My Courses</a>
-            </li>
-            <li>
-                <a href="#">Graiders</a>
-            </li>
-            <li>
-                <a href="#">Post an Assignment</a>
+            <li class="dropdown">
+                <a
+                    aria-expanded="false"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    id="drop"
+                    role="button"
+                >
+                    <img
+                        alt=""
+                        class="img-circle"
+                        src="http://app.thegraidenetwork.com/assets/uploads/dummy.png"
+                        width="30px"
+                    >
+                    Johnny Guy
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="drop">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Log Out</a></li>
+                </ul>
             </li>
         </ul>
     </div>
-</div>
+    <div class="page-header-menu container-fluid">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="primary-nav">
+                <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Active</a>
+                        </li>
+                        <li>
+                            <a href="#">Inactive</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
+<!--container--><div class="container">
 <h2>Alternative Nav</h2>
 <p><em>Should be included outside a <code>.container</code> element.</em></p>
 </div><!--/container-->

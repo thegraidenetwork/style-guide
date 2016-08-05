@@ -1,3 +1,7 @@
+/* General */
+.navbar {
+    margin: 0;
+}
 /* Profile Nav */
 ul.dropdown-menu {
     background: #2DBF74;
@@ -16,17 +20,23 @@ ul.dropdown-menu li a:hover {
     background: #57CC90;
 }
 /* Primary Nav */
+.brand .navbar-header {
+    min-height: 105px;
+}
+.navbar-brand img {
+    width: 178px;
+}
 .page-header-menu {
     color: #ffffff;
     background: #2DBF74;
 }
-.page-header-menu li a {
+.page-header-menu .navbar-collapse li a {
     color: #ffffff;
 }
-.page-header-menu li a:hover {
+.page-header-menu .navbar-collapse li a:hover {
+    color: #ffffff;
     background: #57CC90;
 }
-
 /* Alternative Nav */
 .alt-navbar {
     background-color: #fff;
@@ -53,7 +63,6 @@ ul.dropdown-menu li a:hover {
 .alt-navbar .navbar-nav > li > a:hover {
     color: #2DBF74;
 }
-
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 768px) {
     .page-header-menu {
