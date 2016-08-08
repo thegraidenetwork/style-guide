@@ -364,6 +364,11 @@
         <td><code>glyphicon glyphicon-plus-sign</code></td>
     </tr>
     <tr>
+        <td><span class="glyphicon glyphicon-download"></span></td>
+        <td>Download</td>
+        <td><code>glyphicon glyphicon-download</code></td>
+    </tr>
+    <tr>
         <td><span class="glyphicon glyphicon-edit"></span></td>
         <td>Edit</td>
         <td><code>glyphicon glyphicon-edit</code></td>
@@ -387,6 +392,11 @@
         <td><span class="glyphicon glyphicon-lock"></span></td>
         <td>Security/Logout/Login</td>
         <td><code>glyphicon glyphicon-lock</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-upload"></span></td>
+        <td>Upload</td>
+        <td><code>glyphicon glyphicon-upload</code></td>
     </tr>
     <tr>
         <td><span class="glyphicon glyphicon-user"></span></td>
@@ -522,13 +532,31 @@
     </div>
     <div class="checkbox">
         <label>
-            <input type="checkbox"> Check me out
+            <input type="checkbox"> Checkbox
         </label>
     </div>
     <div class="checkbox">
         <label>
-            <input type="checkbox" disabled readonly> You can't check me
+            <input type="checkbox" disabled readonly> Disabled checkbox
         </label>
+    </div>
+    <div class="form-group">
+        <div class="checkbox">
+            <label>
+                <div class="checker"><span><input name="grades_needed_boolean" type="checkbox" value="1"></span></div> Grades
+            </label>
+        </div>
+        <div class="radio indent">
+            <label>
+                <div class="radio" id="uniform-grades_needed_value_1"><span class="checked"><input type="radio" name="grades_needed" id="grades_needed_value_1" value="Components And Total" checked=""></span></div>
+                Components and total grade.
+            </label>
+        </div>
+        <div class="radio indent">
+            <label>
+                <div class="radio" id="uniform-grades_needed_value_2"><span><input type="radio" name="grades_needed" id="grades_needed_value_2" value="Total"></span></div> Total grade only.
+            </label>
+        </div>
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
     <button type="submit" class="btn btn-default">Cancel</button>
