@@ -536,16 +536,23 @@
 </form>
 
 <h2>File Upload Form</h2>
-<form action="#forms" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label class="btn btn-default btn-file" for="file_upload_control">
+<form action="#forms" method="post" enctype="multipart/form-data" class="row">
+    <div class="form-group col-md-4">
+        <p class="help-block">Includes file upload or link option.</p>
+        <label class="btn btn-default btn-block btn-file" for="file_upload_control">
             <span class="glyphicon glyphicon-upload"></span>
             Upload file
             <input id="file_upload_control" class="form-control" name="file_upload_control" type="file" style="display: none;">
         </label>
-        <p id="file_upload_control_message" class="help-block">Helper text.</p>
+        <input id="file_upload_control_message"
+               name="file_upload_control_url"
+               type="text"
+               class="form-control"
+               placeholder="File upload link" />
     </div>
-    <button type="submit" class="btn btn-success">Submit</button>
+    <div class="form-group col-md-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
 </form>
 
 <hr/>
