@@ -42,6 +42,7 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"
     ></script>
+    <script defer src="js/bootstrap-rating-input.min.js"></script>
     <script defer src="js/file-uploads.js"></script>
 </head>
 <body>
@@ -308,6 +309,7 @@
 <button class="btn btn-default">Default Button</button>
 <button class="btn btn-success">Success (Submit) Button</button>
 <button class="btn btn-info">Alternate Button</button>
+<button class="btn btn-warning">Danger/Delete Button</button>
 
 <hr/>
 
@@ -335,6 +337,11 @@
         <td><code>glyphicon glyphicon-plus-sign</code></td>
     </tr>
     <tr>
+        <td><span class="glyphicon glyphicon-download"></span></td>
+        <td>Download</td>
+        <td><code>glyphicon glyphicon-download</code></td>
+    </tr>
+    <tr>
         <td><span class="glyphicon glyphicon-edit"></span></td>
         <td>Edit</td>
         <td><code>glyphicon glyphicon-edit</code></td>
@@ -343,6 +350,11 @@
         <td><span class="glyphicon glyphicon-plus"></span></td>
         <td>Expand/View More</td>
         <td><code>glyphicon glyphicon-plus</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-gift"></span></td>
+        <td>Giving</td>
+        <td><code>glyphicon glyphicon-gift</code></td>
     </tr>
     <tr>
         <td><span class="glyphicon glyphicon-envelope"></span></td>
@@ -358,6 +370,11 @@
         <td><span class="glyphicon glyphicon-lock"></span></td>
         <td>Security/Logout/Login</td>
         <td><code>glyphicon glyphicon-lock</code></td>
+    </tr>
+    <tr>
+        <td><span class="glyphicon glyphicon-upload"></span></td>
+        <td>Upload</td>
+        <td><code>glyphicon glyphicon-upload</code></td>
     </tr>
     <tr>
         <td><span class="glyphicon glyphicon-user"></span></td>
@@ -529,29 +546,71 @@
     </div>
     <div class="checkbox">
         <label>
-            <input type="checkbox"> Check me out
+            <input type="checkbox"> Checkbox
         </label>
     </div>
     <div class="checkbox">
         <label>
-            <input type="checkbox" disabled readonly> You can't check me
+            <input type="checkbox" disabled readonly> Disabled checkbox
         </label>
+    </div>
+    <h4>Checkbox with indented radio buttons</h4>
+    <div class="form-group">
+        <div class="checkbox">
+            <label>
+                <div class="checker"><span><input name="checkbox_bool" type="checkbox" value="1"></span></div>
+                Checkbox
+            </label>
+        </div>
+        <div class="radio indent">
+            <label>
+                <div class="radio" id="uniform-grades_needed_value_1"><span class="checked"><input type="radio" name="grades_needed" id="grades_needed_value_1" value="Components And Total" checked=""></span></div>
+                Indented radio button 1
+            </label>
+        </div>
+        <div class="radio indent">
+            <label>
+                <div class="radio" id="uniform-grades_needed_value_2"><span><input type="radio" name="grades_needed" id="grades_needed_value_2" value="Total"></span></div>
+                Indented radio button 2
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="star-rating">Star rating</label>
+        <input type="number" name="star-rating" class="rating" data-clearable="n/a">
+        <p class="help-block">
+            See
+            <a
+                href="https://github.com/javiertoledo/bootstrap-rating-input"
+                target="_blank"
+            >
+                javiertoledo/bootstrap-rating-input
+            </a>
+            for details
+        </p>
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
     <button type="submit" class="btn btn-default">Cancel</button>
 </form>
 
 <h2>File Upload Form</h2>
-<form action="#forms" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label class="btn btn-default btn-file" for="file_upload_control">
+<form action="#forms" method="post" enctype="multipart/form-data" class="row">
+    <div class="form-group col-md-4">
+        <p class="help-block">Includes file upload or link option.</p>
+        <label class="btn btn-default btn-block btn-file" for="file_upload_control">
             <span class="glyphicon glyphicon-upload"></span>
             Upload file
             <input id="file_upload_control" class="form-control" name="file_upload_control" type="file" style="display: none;">
         </label>
-        <p id="file_upload_control_message" class="help-block">Helper text.</p>
+        <input id="file_upload_control_message"
+               name="file_upload_control_url"
+               type="text"
+               class="form-control"
+               placeholder="File upload link" />
     </div>
-    <button type="submit" class="btn btn-success">Submit</button>
+    <div class="form-group col-md-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
 </form>
 
 <hr/>
