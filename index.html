@@ -32,19 +32,24 @@
     <link crossorigin="anonymous" rel="stylesheet" href="http://app.dev.thegraidenetwork.com/assets/v2/css/tables.css">
 
     <script
-        defer
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"
     ></script>
     <script
-        defer
         src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"
     ></script>
     <script defer src="js/bootstrap-rating-input.min.js"></script>
+    <script defer src="js/bootstrap-rating-input.min.js"></script>
     <script defer src="js/file-uploads.js"></script>
+    <script>
+        // Enables tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </head>
 <body>
 <div class="container">
@@ -548,6 +553,20 @@
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="help-block" href="#" data-toggle="tooltip"
+                   title="More detail goes in the tooltip."
+                >This is a help block with a tooltip...</a>
+            </div>
+        </div>
+
+        <div class="tooltip top" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                More detail goes in the tooltip.
+            </div>
+        </div>
     </div>
     <div class="checkbox">
         <label>
