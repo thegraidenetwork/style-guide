@@ -70,6 +70,7 @@
     <li><a href="#forms">Forms</a></li>
     <li><a href="#panels">Panels</a></li>
     <li><a href="#alerts">Alerts</a></li>
+    <li><a href="#modals">Modals</a></li>
     <li><a href="#messages">Messages</a></li>
     <li><a href="#footer">Footer</a></li>
 </ol>
@@ -794,6 +795,34 @@
     <div class="alert alert-info" role="alert">
         <strong>Info:</strong>
         Here is some pertinent information about your account or recent action.
+    </div>
+<hr/>
+
+<h1 id="modals">Modals</h1>
+    <p>Note: Modals are only available in the Angular Grading app using Bootstrap and the [Angular 2 Modal package](https://github.com/shlomiassaf/angular2-modal).</p>
+    <div class="modal-content" overlaydialogboundary="" role="document" style="display:block">
+    <modal-content>
+        <modal-title>
+            <div ng-reflect-ng-class="modal-header" class="modal-header">
+                <button aria-label="Close" class="close" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h3 class="modal-title">Modal Title</h3>
+            </div>
+        </modal-title>
+        <modal-body>
+            <div ng-reflect-ng-class="modal-body" class="modal-body">
+                <h4>Modal Subtitle</h4>
+                <p>Modal content</p>
+            </div>
+        </modal-body>
+        <modal-footer>
+            <div ng-reflect-ng-class="modal-footer" class="modal-footer">
+                <button ng-reflect-ng-class="btn btn-primary" class="btn btn-primary">Ok</button>
+                <button ng-reflect-ng-class="btn btn-default" class="btn btn-default">Cancel</button>
+            </div>
+        </modal-footer>
+    </modal-content>
     </div>
 <hr/>
 
