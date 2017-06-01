@@ -615,27 +615,61 @@
             <input type="checkbox" disabled readonly> Disabled checkbox
         </label>
     </div>
-    <h4>Checkbox with indented radio buttons</h4>
-    <div class="form-group">
-        <div class="checkbox">
-            <label>
-                <div class="checker"><span><input name="checkbox_bool" type="checkbox" value="1"></span></div>
-                Checkbox
-            </label>
-        </div>
-        <div class="radio indent">
-            <label>
-                <div class="radio" id="uniform-grades_needed_value_1"><span class="checked"><input type="radio" name="grades_needed" id="grades_needed_value_1" value="Components And Total" checked=""></span></div>
-                Indented radio button 1
-            </label>
-        </div>
-        <div class="radio indent">
-            <label>
-                <div class="radio" id="uniform-grades_needed_value_2"><span><input type="radio" name="grades_needed" id="grades_needed_value_2" value="Total"></span></div>
-                Indented radio button 2
-            </label>
-        </div>
+
+    <h4>Checkbox table list</h4>
+    <div class="form-inline">
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <input class="form-control students" min="0" type="number">
+                    <label>
+                        / 4 Students
+                    </label>
+                </td>
+                <td>
+                    <span style="line-height: 30px;">Section 1</span>
+                </td>
+            </tr><tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <input class="form-control students ng-untouched ng-pristine ng-valid" min="0" required="" type="number">
+                    <label>
+                        / 21 Students
+                    </label>
+                </td>
+                <td>
+                    <span style="line-height: 30px;">Section 2</span>
+                </td>
+            </tr><tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <input class="form-control students ng-untouched ng-pristine ng-valid" min="0" required="" type="number">
+                    <label>
+                        / 19 Students
+                    </label>
+                </td>
+                <td>
+                    <span style="line-height: 30px;">Section 3</span>
+                </td>
+            </tr>
+            </tbody></table>
+
     </div>
+
     <div class="form-group">
         <label for="star-rating">Star rating</label>
         <input type="number" name="star-rating" class="rating" data-clearable="n/a">
@@ -673,6 +707,14 @@
         <button type="submit" class="btn btn-success">Submit</button>
     </div>
 </form>
+
+<h2>Datepicker</h2>
+    <p class="help-block">
+        See
+        <a href="http://kekeh.github.io/mydatepicker/" target="_blank">kekeh/mydatepicker</a>
+        for details
+    </p>
+<img src="img/datepicker.png" style="width:300px;height:auto;">
 
 <hr/>
 
@@ -799,7 +841,7 @@
 <hr/>
 
 <h1 id="modals">Modals</h1>
-    <p>Note: Modals are only available in the Angular Grading app using Bootstrap and the [Angular 2 Modal package](https://github.com/shlomiassaf/angular2-modal).</p>
+    <p class="help-block">Note: Modals are only available in the Angular Grading app using Bootstrap and the <a href="https://github.com/shlomiassaf/angular2-modal" target="_blank">Angular 2 Modal package</a>.</p>
     <div class="modal-content" overlaydialogboundary="" role="document" style="display:block">
     <modal-content>
         <modal-title>
@@ -880,7 +922,7 @@
             <li><a href="https://www.thegraidenetwork.com/news/">In the News</a></li>
             <li><a href="https://www.thegraidenetwork.com/awards-recognitions/">Awards</a></li>
             <li><a href="https://www.thegraidenetwork.com/blog/">Blog</a></li>
-            <li><a href="https://www.thegraidenetwork.com/imact/">Our Impact</a></li>
+            <li><a href="https://www.thegraidenetwork.com/impact/">Our Impact</a></li>
         </ul>
         <ul class="list-inline links social-links">
             <li><a href="mailto:hello@thegraidenetwork.com"><i class="fa fa-envelope-o fa-lg"></i></a></li>
